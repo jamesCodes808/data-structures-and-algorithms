@@ -10,8 +10,6 @@ const LinkedList = require('../../linked-list');
   Return it
 */
 module.exports = function reverse(list) {
-  let reversedList = list.reverse();
-
-  return reversedList;
+  return true;
 };
 
