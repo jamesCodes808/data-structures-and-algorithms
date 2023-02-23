@@ -53,15 +53,16 @@ let characters = [
 ];
 
 const sortByChildren = (charArray) => {
-  // let sortedArr = charArray.sort((a, b) => {
-  //   console.log('a length', a.children.length)
-  //   a.children.length < b.children.length ? -1 : 1
-  //   // : a.children.length === b.children.length ?
-  //   //   a.house.toUpperCase() < b.house.toUpperCase() ? -1 : 1 : 0
+  return charArray.sort((a, b) => {
 
-  // })
-  // console.log(sortedArr)
-  // return sortedArr;
+    if (a.children.length < b.children.length) {
+      return -1
+    } else if (a.children.length > b.children.length) {
+      return 1
+    } else {
+      return a.house < b.house ? -1 : 1
+    }
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -88,7 +89,7 @@ For example:
 ------------------------------------------------------------------------------------------------ */
 
 const isNum = (input) => {
-  return input.match(/\d/) || typeof (input) === 'number' ? true : false
+  return /[0-9]/.test(input)
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -111,9 +112,7 @@ Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
 const isCapitalized = (str) => {
-
   return str.match(/[A-Z]\w+/g) ? str.match(/[A-Z]\w+/g) : []
-
 };
 
 /* ------------------------------------------------------------------------------------------------
