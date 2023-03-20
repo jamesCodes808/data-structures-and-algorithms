@@ -20,4 +20,11 @@ To run your tests
 
 ### 401 Data Structures, Code Challenges
 
-- Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
+## Table of Contents
+
+<details closed><summary>Challenges</summary>
+<br>
+- <a href="python/code_challenges/list-reverse/README.md">list-reverse</a>
+<br>
+</details>
+
