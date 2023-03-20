@@ -2,14 +2,6 @@
 
 ## Language: `Python`
 
-## Table of Contents
-
-<details closed><summary>Challenges</summary>
-
-- <a href="code_challenges/list-reverse/README">list-reverse</a>
-<br>
-</details>
-<br>
 
 ### Folder and Challenge Setup
 
