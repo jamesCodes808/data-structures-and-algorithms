@@ -1,6 +1,6 @@
 # List Reverse
 
-Create a function called ```reverseList`` which takes in a list as an argument. And without utilizing any of the built-in methods available, return an array with elements in the reversed order
+Create a function called ```reverseList``` which takes in a list as an argument. And without utilizing any of the built-in methods available, return an array with elements in the reversed order
 
 ## Whiteboard Process
 
