@@ -2,6 +2,15 @@
 
 ## Language: `Python`
 
+## Table of Contents
+
+<details closed><summary>Challenges</summary>
+
+- <a href='/code_challenges/list-reverse/README'>list-reverse</a>
+<br>
+</details>
+<br>
+
 ### Folder and Challenge Setup
 
 Each type of code challenge has slightly different instructions. Please refer to the notes and examples below for instructions for each DS&A assignment type.
