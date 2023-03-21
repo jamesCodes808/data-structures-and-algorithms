@@ -26,5 +26,8 @@ To run your tests
 <br>
 - <a href="python/code_challenges/list-reverse/README.md">list-reverse</a>
 <br>
+<br>
+- <a href="python/code_challenges/list-insert-shift/README.md">list-insert-shift</a>
+<br>
 </details>
 
