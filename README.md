@@ -23,11 +23,14 @@ To run your tests
 ## Table of Contents
 
 <details closed><summary>Challenges</summary>
-<br>
-- <a href="python/code_challenges/list-reverse/README.md">list-reverse</a>
-<br>
-<br>
-- <a href="python/code_challenges/list-insert-shift/README.md">list-insert-shift</a>
-<br>
+    <br>
+    - <a href="python/code_challenges/list-reverse/README.md">list-reverse</a>
+    <br>
+    <br>
+    - <a href="python/code_challenges/list-insert-shift/README.md">list-insert-shift</a>
+    <br>
+    <br>
+    - <a href="python/code_challenges/list-binary-search/README.md">list-binary-search</a>
+    <br>
 </details>
 
