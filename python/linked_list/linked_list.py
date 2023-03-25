@@ -70,11 +70,6 @@ class LinkedList:
         else:
             return False
 
-    def some_method(self):
-        # method body here
-        pass
-
-
 
 class TargetError:
     """
