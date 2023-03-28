@@ -83,6 +83,21 @@ class LinkedList:
         except Exception:
             raise TargetError
 
+    def kth_from_end(self, k):
+        try:
+            if k < 0:
+                raise TargetError
+            else:
+                current = self.head
+                reversed = []
+                while current:
+                    reversed.append(current.value)
+                    current = current.next
+                reversed.reverse()
+                return reversed[k]
+        except Exception:
+            raise TargetError
+
     def traverse_list(self):
         current_node = self.head
         list_of_nodes = []
