@@ -7,9 +7,9 @@ class Node:
         next (Node): The next node in the list.
     """
 
-    def __init__(self, value=None, _next=None):
+    def __init__(self, value, _next=None):
         self.value = value
-        self._next = next
+        self.next = _next
 
 class LinkedList:
     """
@@ -43,7 +43,45 @@ class LinkedList:
         new_node.next = self.head
         self.head = new_node
 
+    def append(self, value):
+        new_node = Node(value)
+        current = self.head
+        while current is not None:
+            if current.next is None:
+                current.next = new_node
+                break
+            else:
+                current = current.next
+        current = new_node
 
+    def insert_before(self, reference, value):
+        try:
+            current = self.head
+            temp = None
+            new_node = Node(value)
+            while current.value is not reference:
+                temp = current
+                current = current.next
+            new_node.next = current
+            if temp:
+                temp.next = new_node
+            else:
+                self.head = new_node
+        except Exception:
+            raise TargetError
+
+    def insert_after(self, reference, value):
+        try:
+            current = self.head
+            temp = current.next
+            new_node = Node(value)
+            while current.value is not reference:
+                temp = current.next
+                current = current.next
+            current.next = new_node
+            new_node.next = temp
+        except Exception:
+            raise TargetError
 
     def traverse_list(self):
         current_node = self.head
@@ -71,34 +109,17 @@ class LinkedList:
             return False
 
 
-class TargetError:
-    """
-
-    """
+class TargetError(AttributeError):
     pass
 
 if __name__ == '__main__':
     test_linked_list = LinkedList()
-    # print(test_linked_list.head)
-    # head_value = test_linked_list.head.value
-    # print(head_value)
+
     test_linked_list.insert('2')
     str(test_linked_list)
-
     test_linked_list.insert('1')
     str(test_linked_list)
     test_linked_list.insert('0')
-    print(str(test_linked_list))
-    test_linked_list.insert('0')
-    print(str(test_linked_list))
-    test_linked_list.insert('0')
-    print(str(test_linked_list))
-    test_linked_list.insert('0')
-    print(str(test_linked_list))
-    test_linked_list.insert('0')
-    print(str(test_linked_list))
-    test_linked_list.insert('0')
-    print(str(test_linked_list))
-    test_linked_list.insert('0')
-    print(str(test_linked_list))
+    str(test_linked_list)
+
 
