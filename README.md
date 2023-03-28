@@ -35,5 +35,11 @@ To run your tests
     <br>
     - <a href="python/linked_list/README.md">Linked lists</a>
     <br>
+    <br>
+    - <a href="python/linked_list/linked_list_insertions/README.md">Linked list Insertions</a>
+    <br>
+   <br>
+    - <a href="python/linked_list/linked_list_kth/README.md">Linked list Kth</a>
+    <br>
 </details>
 
