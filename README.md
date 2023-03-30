@@ -41,5 +41,8 @@ To run your tests
    <br>
     - <a href="python/linked_list/linked_list_kth/README.md">Linked list Kth</a>
     <br>
+    <br>
+    - <a href="python/linked_list/linked_list_zip/README.md">Linked list Zip</a>
+    <br>
 </details>
 
