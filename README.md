@@ -22,6 +22,7 @@ To run your tests
 
 ## Table of Contents
 
+### Linked Lists
 <details closed><summary>Challenges</summary>
     <br>
     - <a href="python/code_challenges/list-reverse/README.md">List reverse</a>
@@ -46,3 +47,18 @@ To run your tests
     <br>
 </details>
 
+### Queues
+
+<details closed><summary>Challenges</summary>
+    <br>
+    - <a href="python/data_structures/queue/README.md">Queue: Basics</a>
+    <br>
+</details>
+
+### Stacks
+
+<details closed><summary>Challenges</summary>
+    <br>
+    - <a href="python/data_structures/stack/README.md">Stacks: Basics</a>
+    <br>
+</details>
