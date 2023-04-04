@@ -62,3 +62,19 @@ To run your tests
     - <a href="python/data_structures/stack/README.md">Stacks: Basics</a>
     <br>
 </details>
+
+### Pseudo Queues
+
+<details closed><summary>Challenges</summary>
+    <br>
+    - <a href="python/code_challenges/stack-queue-pseudo/README.md">PseudoQueues: Basics</a>
+    <br>
+</details>
+
+### Animal Shelter
+
+<details closed><summary>Challenges</summary>
+    <br>
+    - <a href="python/code_challenges/stack-queue-animal-shelter/README.md">Animal Shelter</a>
+    <br>
+</details>
