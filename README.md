@@ -23,7 +23,7 @@ To run your tests
 ## Table of Contents
 
 ### Linked Lists
-<details closed><summary>Challenges</summary>
+<details closed><summary>Data Structures and challenges</summary>
     <br>
     - <a href="python/code_challenges/list-reverse/README.md">List reverse</a>
     <br>
@@ -49,7 +49,7 @@ To run your tests
 
 ### Queues
 
-<details closed><summary>Challenges</summary>
+<details closed><summary>Data Structures and challenges</summary>
     <br>
     - <a href="python/data_structures/queue/README.md">Queue: Basics</a>
     <br>
@@ -57,24 +57,39 @@ To run your tests
 
 ### Stacks
 
-<details closed><summary>Challenges</summary>
+<details closed><summary>Data Structures and challenges</summary>
     <br>
     - <a href="python/data_structures/stack/README.md">Stacks: Basics</a>
     <br>
 </details>
 
-### Pseudo Queues
+### Pseudo Queues - Stack Queues
 
-<details closed><summary>Challenges</summary>
+<details closed><summary>Data Structures and challenges</summary>
     <br>
     - <a href="python/code_challenges/stack-queue-pseudo/README.md">PseudoQueues: Basics</a>
     <br>
-</details>
-
-### Animal Shelter
-
-<details closed><summary>Challenges</summary>
     <br>
     - <a href="python/code_challenges/stack-queue-animal-shelter/README.md">Animal Shelter</a>
     <br>
+    <br>
+    - <a href="python/code_challenges/stack-queue-brackets/README.md">Brackets</a>
+    <br>
+</details>
+
+### Binary Trees
+
+<details closed><summary>Data Structures and challenges</summary>
+    <br>
+    - <a href="python/data_structures/binary_tree/README.md">Binary Trees: Basics</a>
+    <br>
+</details>
+
+### Binary Search Trees
+
+<details closed><summary>Data Structures and challenges</summary>
+    <br>
+    - <a href="python/data_structures/binary_search_tree/README.md">Binary Search Trees: Basics</a>
+    <br>
+
 </details>
