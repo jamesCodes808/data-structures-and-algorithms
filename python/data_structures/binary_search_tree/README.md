@@ -13,6 +13,7 @@ Create a Binary Search Tree class
     - Arguments: value
     - Return: nothing
     - Adds a new node with that value in the correct location in the binary search tree.
+
   - contains()
     - Argument: value
     - Returns: boolean indicating whether or not the value is in the tree at least once.

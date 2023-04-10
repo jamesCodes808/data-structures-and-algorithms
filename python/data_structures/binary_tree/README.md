@@ -6,19 +6,27 @@ Create a Node class that has properties for the value stored in the node, the le
 ### Binary Tree
 Create a Binary Tree class
 - Define a method for each of the depth first traversals:
+
   - pre order()
     - root >> left >> right
+
   - in order()
     - left >> root >> right
+
   - post order()
     - left >> right >> root
 
   - Each depth first traversal method should return an array of values, ordered appropriately.
 
+  - find_maximum_value()
+    - Arguments: none
+    - Returns: number
+    - Find the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
+
 
 ## Whiteboard Process
 
-NA
+![tree max white board process](tree-max-wb.png)
 
 ## Approach & Efficiency
 
@@ -56,4 +64,9 @@ tree.in_order()
 To traverse, search and print the BinaryTree in post-order method:
 ```python
 tree.post_order()
+```
+
+To find the maximum value in a BinaryTree:
+```python
+tree.find_maximum_value()
 ```
