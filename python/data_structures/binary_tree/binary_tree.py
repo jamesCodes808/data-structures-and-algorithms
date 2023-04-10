@@ -43,6 +43,28 @@ class BinaryTree:
         walk(self.root, values)
         return values
 
+    def find_maximum_value(self):
+
+        def walk(node):
+            # if we hit null value go back to prev iteration
+            # stopping case returns something early
+            if not node:
+                return
+            current_value = node.value
+            # base case, does all the work until we reach a stopping case
+            left_value = walk(node.left)
+            right_value = walk(node.right)
+
+            # algorithm/functionality, what will happen once we have all values we need from recursive calls
+            if left_value is not None and left_value > current_value:
+                current_value = left_value
+
+            if right_value is not None and right_value > current_value:
+                current_value = right_value
+
+            return current_value
+        return walk(self.root)
+
 class Node:
     """
     Node consists of a value, aware of left and right child nodes
@@ -60,12 +82,10 @@ class Node:
 if __name__ == '__main__':
     tree = BinaryTree()
 
-    tree.root = Node("a")
-    tree.root.left = Node("b")
-    tree.root.right = Node("c")
-    tree.root.left.left = Node("d")
-    tree.root.left.right = Node("e")
-    tree.root.right.left = Node("f")
-    tree.root.right.right = Node("g")
+    # tree.root = Node("a")
+    # tree.root = Node(10)
+    # tree.root.left = Node(30)
+    # tree.root.right = Node(-7)
 
-    print(tree.post_order())
+    # print(tree.post_order())
+    print(tree.find_maximum_value())
