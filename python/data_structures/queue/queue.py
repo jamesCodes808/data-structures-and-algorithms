@@ -29,22 +29,26 @@ class Queue:
     # adds node to rear of queue
     def enqueue(self, value):
         new_node = Node(value)
-        if self.rear is None:
+        if self.front is None:
             self.rear = new_node
             self.front = new_node
+            return
         self.rear._next = new_node
         self.rear = new_node
 
 
     # removes node from front of queue
     def dequeue(self):
-        try:
-            temp = Node(self.front.value)
-            self.front = self.front._next
-            temp._next = None
-            return temp.value
-        except Exception:
+        if self.is_empty():
             raise InvalidOperationError
+
+        temp = self.front
+        self.front = self.front._next
+        temp._next = None
+        if self.front is None:
+            self.rear = None
+        return temp.value
+
 
     def peek(self):
         try:
