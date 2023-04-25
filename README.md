@@ -25,25 +25,25 @@ To run your tests
 ### Linked Lists
 <details closed><summary>Data Structures and challenges</summary>
     <br>
-    - <a href="python/code_challenges/list-reverse/README">List reverse</a>
+    - <a href="python/code_challenges/list-reverse/README.md">List reverse</a>
     <br>
     <br>
-    - <a href="python/code_challenges/list-insert-shift/README">List insert shift</a>
+    - <a href="python/code_challenges/list-insert-shift/README.md">List insert shift</a>
     <br>
     <br>
-    - <a href="python/code_challenges/list-binary-search/README">List binary search</a>
+    - <a href="python/code_challenges/list-binary-search/README.md">List binary search</a>
     <br>
     <br>
-    - <a href="python/linked_list/README">Linked lists</a>
+    - <a href="python/linked_list/README.md">Linked lists</a>
     <br>
     <br>
-    - <a href="python/linked_list/linked_list_insertions/README">Linked list Insertions</a>
+    - <a href="python/linked_list/linked_list_insertions/README.md">Linked list Insertions</a>
     <br>
    <br>
-    - <a href="python/linked_list/linked_list_kth/README">Linked list Kth</a>
+    - <a href="python/linked_list/linked_list_kth/README.md">Linked list Kth</a>
     <br>
     <br>
-    - <a href="python/linked_list/linked_list_zip/README">Linked list Zip</a>
+    - <a href="python/linked_list/linked_list_zip/README.md">Linked list Zip</a>
     <br>
 </details>
 
@@ -51,7 +51,7 @@ To run your tests
 
 <details closed><summary>Data Structures and challenges</summary>
     <br>
-    - <a href="python/data_structures/queue/README">Queue: Basics</a>
+    - <a href="python/data_structures/queue/README.md">Queue: Basics</a>
     <br>
 </details>
 
@@ -59,7 +59,7 @@ To run your tests
 
 <details closed><summary>Data Structures and challenges</summary>
     <br>
-    - <a href="python/data_structures/stack/README">Stacks: Basics</a>
+    - <a href="python/data_structures/stack/README.md">Stacks: Basics</a>
     <br>
 </details>
 
@@ -67,13 +67,13 @@ To run your tests
 
 <details closed><summary>Data Structures and challenges</summary>
     <br>
-    - <a href="python/code_challenges/stack-queue-pseudo/README">PseudoQueues: Basics</a>
+    - <a href="python/code_challenges/stack-queue-pseudo/README.md">PseudoQueues: Basics</a>
     <br>
     <br>
-    - <a href="python/code_challenges/stack-queue-animal-shelter/README">Animal Shelter</a>
+    - <a href="python/code_challenges/stack-queue-animal-shelter/README.md">Animal Shelter</a>
     <br>
     <br>
-    - <a href="python/code_challenges/stack-queue-brackets/README">Brackets</a>
+    - <a href="python/code_challenges/stack-queue-brackets/README.md">Brackets</a>
     <br>
 </details>
 
@@ -81,10 +81,10 @@ To run your tests
 
 <details closed><summary>Data Structures and challenges</summary>
     <br>
-    - <a href="python/data_structures/binary_tree/README">Binary Trees: Basics</a>
+    - <a href="python/data_structures/binary_tree/README.md">Binary Trees: Basics</a>
     <br>
     <br>
-    - <a href="python/code_challenges/tree_breadth_first/README">Binary Trees: Breadth First</a>
+    - <a href="python/code_challenges/tree_breadth_first/README.md">Binary Trees: Breadth First</a>
     <br>
 
 </details>
@@ -94,7 +94,7 @@ To run your tests
 
 <details closed><summary>Data Structures and challenges</summary>
     <br>
-    - <a href="python/data_structures/binary_search_tree/README">Binary Search Trees: Basics</a>
+    - <a href="python/data_structures/binary_search_tree/README.md">Binary Search Trees: Basics</a>
     <br>
 
 </details>
@@ -103,7 +103,7 @@ To run your tests
 
 <details closed><summary>Data Structures and Challenges</summary>
   <br>
-  - <a href="python/code_challenges/tree_fizz_buzz/README">K-ary Trees: Fizz Buzz</a>
+  - <a href="python/code_challenges/tree_fizz_buzz/README.md">K-ary Trees: Fizz Buzz</a>
   <br>
 </details>
 
@@ -113,7 +113,7 @@ To run your tests
 <details closed><summary>Data Structure and Challenges</summary>
 
   <br>
-  - <a href="python/code_challenges/sorting/insertion/README">Insertion Sort</a>
+  - <a href="python/code_challenges/sorting/insertion/README.md">Insertion Sort</a>
   <br>
 
 </details>
