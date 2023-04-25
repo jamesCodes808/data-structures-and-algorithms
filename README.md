@@ -86,6 +86,7 @@ To run your tests
     <br>
     - <a href="python/code_challenges/tree_breadth_first/README.md">Binary Trees: Breadth First</a>
     <br>
+
 </details>
 
 
@@ -98,5 +99,21 @@ To run your tests
 
 </details>
 
+### K-Ary Trees
 
-test
+<details closed><summary>Data Structures and Challenges</summary>
+  <br>
+  - <a href="python/code_challenges/tree_fizz_buzz/README.md">K-ary Trees: Fizz Buzz</a>
+  <br>
+</details>
+
+
+### Lists
+
+<details closed><summary>Data Structure and Challenges</summary>
+
+  <br>
+  - <a href="python/code_challenges/sorting/insertion/README.md">Insertion Sort</a>
+  <br>
+
+</details>
