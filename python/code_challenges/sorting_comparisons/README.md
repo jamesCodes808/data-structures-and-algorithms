@@ -41,6 +41,7 @@ Sorting objects typically comes down to sorting based on properties in the objec
 ## Using Lambda and Sorted in Python
 
 1. We have a list of dicts
+
 ```python
 movies = [
     {

@@ -115,5 +115,11 @@ To run your tests
   <br>
   - <a href="python/code_challenges/sorting/insertion/README.md">Insertion Sort</a>
   <br>
+  <br>
+  - <a href="python/code_challenges/sorting/merge/README.md">Merge Sort</a>
+  <br>
+  <br>
+  - <a href="python/code_challenges/sorting_comparisons/README.md">Comparison Sort</a>
+  <br>
 
 </details>
