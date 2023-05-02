@@ -37,6 +37,13 @@ class LinkedList:
             list_of_nodes.append(str(None))
             return ' -> '.join(list_of_nodes)
 
+    def display(self):
+        collection = []
+        current = self.head
+        while current:
+            collection.append([current.value[0], current.value[1]])
+        return collection
+
     def insert(self, value):
         new_node = Node(value)
         new_node.next = self.head

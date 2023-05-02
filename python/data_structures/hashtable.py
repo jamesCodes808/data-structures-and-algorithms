@@ -4,15 +4,16 @@ class Node:
     key = default: None, holds the key of the pair
     value = default: None, holds the value of the pair
     """
-    def __init__(self, key=None, value=None):
-        self.key = key
+    def __init__(self, value=None, _next=None):
         self.value = value
+        self._next = _next
 
     def display(self):
         collection = []
-        collection.append(self.key)
-        collection.append(self.value)
+        if self.value is not None:
+            collection.append([self.value[0], self.value[1]])
         return collection
+
 
 class Hashtable:
     """
@@ -23,34 +24,53 @@ class Hashtable:
 
     def __init__(self, size=1024):
         self._size = size
-        self._buckets = size * [Node()]
+        self._buckets = size * [None]
 
     def set(self, key, value):
-        pair = Node(key, value)
         index = self.hash(key)
-        self._buckets.insert(index, pair)
+        bucket = self._buckets[index]
+        if bucket is None:
+            self._buckets[index] = Node([key, value])
+            # self._buckets[index].append([key,value])
+            return
+        prev = bucket
+        while bucket is not None:
+            prev = bucket
+            bucket = bucket._next
+        prev._next = Node([key, value])
 
 
     def get(self, key):
-        if self.has(key):
-            index = self.hash(key)
-            pair = self._buckets[index]
-            return pair.value
-        else:
+        index = self.hash(key)
+        bucket = self._buckets[index]
+        while bucket is not None and bucket.value[0] != key:
+            bucket = bucket._next
+        if bucket is None:
             return None
+        else:
+            return bucket.value[1]
+
 
     def has(self, key):
         index = self.hash(key)
-        if self._buckets[index].value:
-            return True
-        else:
+        bucket = self._buckets[index]
+        while bucket is not None and bucket.value[0] != key:
+            bucket = bucket._next
+
+        if bucket is None:
             return False
+        if bucket.value[0] == key:
+            return True
+
 
 
     def keys(self):
         key_collection = []
-        for i in self._buckets:
-            key_collection.append(i.key)
+        for i in range(0, len(self._buckets)):
+            if self._buckets[i] is not None:
+                key_collection.append(self._buckets[i].value[0])
+            else:
+                key_collection.append(None)
         return key_collection
 
 
@@ -66,11 +86,15 @@ class Hashtable:
         return index
 
 if __name__ == '__main__':
-    test_ht = Hashtable(1024)
+    test_ht = Hashtable(3)
     test_ht.set("test1", 12345)
-    actual = []
-    for item in test_ht._buckets:
-        if item.value:
-            actual.append(item.display())
+    # test_ht.set("test2", 65483)
+    # test_ht.set("test3", 98752)
+    # actual = []
+    # for item in test_ht._buckets:
+    #     if item is not None:
+    #         actual.append(item.display())
     # print(actual)
-    print(test_ht.hash('test1'))
+    # print(test_ht.hash('test1'))
+    print(test_ht.keys())
+    # print(test_ht.has("test3"))

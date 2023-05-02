@@ -42,3 +42,9 @@ Properties
 - display()
 - Arguments: None
 - Returns: key value pair
+
+
+## References
+
+Tyler Huntley - Helping me understand this better and explaining how they got the get and set method working with
+LinkedList
