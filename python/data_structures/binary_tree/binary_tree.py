@@ -15,9 +15,10 @@ class BinaryTree:
         def walk(input_node, value_list):
             if not input_node:
                 return
-            value_list.append(input_node.value)
-            walk(input_node.left, value_list)
-            walk(input_node.right, value_list)
+            else:
+                value_list.append(input_node.value)
+                walk(input_node.left, value_list)
+                walk(input_node.right, value_list)
         walk(self.root, values)
         return values
 
@@ -26,9 +27,10 @@ class BinaryTree:
         def walk(input_node, value_list):
             if not input_node:
                 return
-            walk(input_node.left, value_list)
-            value_list.append(input_node.value)
-            walk(input_node.right, value_list)
+            else:
+                walk(input_node.left, value_list)
+                value_list.append(input_node.value)
+                walk(input_node.right, value_list)
         walk(self.root, values)
         return values
 
@@ -37,9 +39,10 @@ class BinaryTree:
         def walk(input_node, value_list):
             if not input_node:
                 return
-            walk(input_node.left, value_list)
-            walk(input_node.right, value_list)
-            value_list.append(input_node.value)
+            else:
+                walk(input_node.left, value_list)
+                walk(input_node.right, value_list)
+                value_list.append(input_node.value)
         walk(self.root, values)
         return values
 
