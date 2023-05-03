@@ -32,9 +32,9 @@ class Queue:
         if self.front is None:
             self.rear = new_node
             self.front = new_node
-            return
-        self.rear._next = new_node
-        self.rear = new_node
+        else:
+            self.rear._next = new_node
+            self.rear = new_node
 
 
     # removes node from front of queue

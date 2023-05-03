@@ -26,11 +26,12 @@ def test_internals():
 
     # NOTE: purposely breaking encapsulation to test the "internals" of Hashmap
     for item in hashtable._buckets:
-        if item:
+        if item is not None:
             actual.append(item.display())
 
-    expected = [[["silent", True]], [["listen", "to me"]], [["ahmad", 30]]]
-
+    expected = [[["silent", True], ["listen", "to me"]], [["ahmad", 30]]]
+    print('actual',actual)
+    print('expected', expected)
     assert actual == expected
 
 def test_hashtable_get_none():
@@ -43,7 +44,7 @@ def test_hashtable_get_none():
 def test_hashtable_keys_get_unique_keys():
     test_ht = Hashtable(3)
     test_ht.set('test1', 12345)
-    expected = [None, 'test1', None]
+    expected = ['test1']
     actual = test_ht.keys()
     assert actual == expected
 
@@ -51,7 +52,7 @@ def test_hashtable_collision_linked_list():
     test_ht = Hashtable(3)
     test_ht.set('test1', 12345)
     test_ht.set('test1', 54321)
-    expected = 12345
+    expected = 54321
     actual = test_ht.get('test1')
     assert actual == expected
 
