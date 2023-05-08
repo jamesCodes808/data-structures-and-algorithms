@@ -31,3 +31,8 @@ size()
   - Arguments: none
   - Returns the total number of nodes in the graph
   - 0 if there are none
+
+breadth_first()
+  - Arguments: Node
+  - Return: A collection of nodes in the order they were visited.
+  - Display the collection

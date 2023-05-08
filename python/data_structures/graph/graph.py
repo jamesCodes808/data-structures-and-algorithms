@@ -1,3 +1,5 @@
+from data_structures.queue.queue import Queue
+
 class Graph:
     """
     Non-Linear data structure. Collection of Vertices (Nodes) connected by Edges
@@ -71,6 +73,36 @@ class Graph:
         :return: Integer representing the size of graph
         """
         return len(self.adjacency_list)
+
+    def breadth_first(self, root):
+        """
+        breadth first
+        Arguments: Node
+        Return: A collection of nodes in the order they were visited.
+        Display the collection
+        """
+        nodes = list()
+        breadth = Queue()
+        visited = set()
+
+        breadth.enqueue(root)
+        visited.add(root)
+
+        while breadth:
+            if breadth.is_empty():
+                return nodes
+
+            current = breadth.dequeue()
+
+            nodes.append(current.value)
+
+            for edge in self.get_neighbors(current):
+                neighbor = edge.vertex
+                if neighbor not in visited:
+                    breadth.enqueue(neighbor)
+                    visited.add(neighbor)
+
+        return None
 
 
 class Vertex:

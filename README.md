@@ -86,7 +86,7 @@ To run your tests
     <br>
     - <a href="python/code_challenges/tree_breadth_first/">Binary Trees: Breadth First</a>
     <br>
-
+    - <a href="python/code_challenges/tree_intersection/">Binary Trees: Intersection</a>
 </details>
 
 
@@ -121,5 +121,26 @@ To run your tests
   <br>
   - <a href="python/code_challenges/sorting_comparisons/">Comparison Sort</a>
   <br>
+
+</details>
+
+### HashTable
+
+<details closed><summary>Data Structures and Challenges</summary>
+
+  <br>
+  - <a href="python/data_structures/hashtable/">Hash Table</a>
+  <br>
+  - <a href="python/code_challenges/hashtable_repeated_word/">Hash Table Repeated Word</a>
+  <br>
+
+</details>
+
+### Graphs
+
+<details closed><summary>Data Structures and Challenges</summary>
+
+  <br>
+  - <a href="python/data_structures/graph/">Graph</a>
 
 </details>
